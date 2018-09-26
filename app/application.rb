@@ -8,7 +8,7 @@ class Application
       resp.write "#{item}, #{price}"
 
    elsif
-     req.path !== "/items"
+     req.path == "/items"
      resp.write "Route not found"
      resp.status = 404
 
