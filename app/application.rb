@@ -4,8 +4,7 @@ class Application
   resp = Rack::Response.new
   req = Rack::Request.new(env)
 
-  if req.path=="/items"
-      resp.write "#{item}, #{price}"
+   if req.path.match(/items/)
 
    elsif
      req.path == "/items"
